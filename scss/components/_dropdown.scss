@@ -24,9 +24,13 @@ li[role="list"] > ul {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   background-color: var(--dropdown-background-color);
-  box-shadow: var(--card-box-shadow);
   color: var(--dropdown-color);
   white-space: nowrap;
+  overflow: hidden;
+  
+  &.shadow {
+    box-shadow: var(--card-box-shadow);
+  }
 
   li {
     width: 100%;
@@ -35,12 +39,12 @@ li[role="list"] > ul {
       var(--form-element-spacing-horizontal);
     list-style: none;
 
-    &:first-of-type {
-      margin-top: calc(var(--form-element-spacing-vertical) * 0.5);
+    &:first-of-type > :first-child{
+      padding-top: var(--form-element-spacing-vertical);
     }
 
-    &:last-of-type {
-      margin-bottom: calc(var(--form-element-spacing-vertical) * 0.5);
+    &:last-of-type > :first-child{
+      padding-bottom: var(--form-element-spacing-vertical);
     }
 
     a {
@@ -49,7 +53,6 @@ li[role="list"] > ul {
         calc(var(--form-element-spacing-horizontal) * -1);
       padding: calc(var(--form-element-spacing-vertical) * 0.5)
         var(--form-element-spacing-horizontal);
-      overflow: hidden;
       color: var(--dropdown-color);
       text-decoration: none;
       text-overflow: ellipsis;
@@ -93,7 +96,7 @@ details[role="list"] {
           var(--border-width) * 2
       );
       padding: var(--form-element-spacing-vertical)
-        var(--form-element-spacing-horizontal);
+        var(--form-element-spacing-horizontal-rounded);
       border: var(--border-width) solid var(--form-element-border-color);
       border-radius: var(--border-radius);
       background-color: var(--form-element-background-color);
@@ -161,7 +164,7 @@ nav details[role="list"] {
   summary,
   summary:not([role]) {
     height: auto;
-    padding: var(--nav-link-spacing-vertical) var(--nav-link-spacing-horizontal);
+    padding: var(--nav-link-spacing-vertical) var(--nav-link-spacing-horizontal-rounded);
   }
 
   &[open] summary {
@@ -169,6 +172,7 @@ nav details[role="list"] {
   }
 
   summary + ul {
+    overflow: hidden;
     margin-top: var(--outline-width);
     margin-inline-start: 0;
   }

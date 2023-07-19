@@ -19,7 +19,11 @@ section > pre {
   padding: calc(var(--block-spacing-vertical) / 1.5)
     var(--block-spacing-horizontal);
   background: var(--article-code-background-color);
-  box-shadow: var(--card-box-shadow);
+  border: solid var(--border-width) var(--card-border-color);
+
+  &.shadow {
+    box-shadow: var(--card-box-shadow);
+  }
 }
 
 // Badge for Valid & Invalid code

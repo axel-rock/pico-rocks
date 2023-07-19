@@ -7,7 +7,11 @@ article {
   padding: var(--block-spacing-vertical) var(--block-spacing-horizontal);
   border-radius: var(--border-radius);
   background: var(--card-background-color);
-  box-shadow: var(--card-box-shadow);
+  border: solid var(--border-width) var(--card-border-color);
+  
+  &.shadow {
+    box-shadow: var(--card-box-shadow);
+  }
 
   > header,
   > footer {

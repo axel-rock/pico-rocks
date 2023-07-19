@@ -97,7 +97,7 @@ nav {
   [role="button"] {
     margin-right: inherit;
     margin-left: inherit;
-    padding: var(--nav-link-spacing-vertical) var(--nav-link-spacing-horizontal);
+    padding: var(--nav-link-spacing-vertical) calc(var(--nav-link-spacing-horizontal) * 2);
   }
 }
 
