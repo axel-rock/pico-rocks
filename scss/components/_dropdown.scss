@@ -19,6 +19,7 @@ li[role="list"] > ul {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   border: var(--border-width) solid var(--dropdown-border-color);
   border-radius: var(--border-radius);
   border-top-right-radius: 0;
@@ -26,7 +27,6 @@ li[role="list"] > ul {
   background-color: var(--dropdown-background-color);
   color: var(--dropdown-color);
   white-space: nowrap;
-  overflow: hidden;
   
   &.shadow {
     box-shadow: var(--card-box-shadow);
@@ -172,9 +172,9 @@ nav details[role="list"] {
   }
 
   summary + ul {
-    overflow: hidden;
     margin-top: var(--outline-width);
     margin-inline-start: 0;
+    overflow: hidden;
   }
 
   summary[role="link"] {

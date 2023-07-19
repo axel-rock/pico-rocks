@@ -925,8 +925,8 @@ input[type=reset],
   font-weight: var(--font-weight);
   font-size: 1rem;
   line-height: var(--line-height);
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
   cursor: pointer;
   transition: background-color var(--transition), border-color var(--transition), color var(--transition), box-shadow var(--transition);
 }
@@ -1777,9 +1777,9 @@ details[open] > summary::after {
 article {
   margin: var(--block-spacing-vertical) 0;
   padding: var(--block-spacing-vertical) var(--block-spacing-horizontal);
+  border: solid var(--border-width) var(--card-border-color);
   border-radius: var(--border-radius);
   background: var(--card-background-color);
-  border: solid var(--border-width) var(--card-border-color);
 }
 article.shadow {
   box-shadow: var(--card-box-shadow);
@@ -2047,6 +2047,7 @@ li[role=list] > ul {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   border: var(--border-width) solid var(--dropdown-border-color);
   border-radius: var(--border-radius);
   border-top-right-radius: 0;
@@ -2054,7 +2055,6 @@ li[role=list] > ul {
   background-color: var(--dropdown-background-color);
   color: var(--dropdown-color);
   white-space: nowrap;
-  overflow: hidden;
 }
 details[role=list] summary + ul.shadow,
 li[role=list] > ul.shadow {
@@ -2171,9 +2171,9 @@ nav details[role=list][open] summary {
   border-radius: var(--border-radius);
 }
 nav details[role=list] summary + ul {
-  overflow: hidden;
   margin-top: var(--outline-width);
   margin-inline-start: 0;
+  overflow: hidden;
 }
 nav details[role=list] summary[role=link] {
   margin-bottom: calc(var(--nav-link-spacing-vertical) * -1);

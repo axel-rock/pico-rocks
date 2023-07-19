@@ -753,8 +753,8 @@ hgroup > *:last-child,
 .headings > *:last-child {
   --color: var(--muted-color);
   --font-weight: unset;
-  font-size: 1rem;
   font-weight: 300;
+  font-size: 1rem;
   font-family: unset;
   letter-spacing: unset;
 }
@@ -912,8 +912,8 @@ input[type=reset],
   font-weight: var(--font-weight);
   font-size: 1rem;
   line-height: var(--line-height);
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
   cursor: pointer;
 }
 button:is([aria-current], :hover, :active, :focus),

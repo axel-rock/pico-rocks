@@ -18,8 +18,8 @@ section > pre {
   margin: var(--block-spacing-vertical) 0;
   padding: calc(var(--block-spacing-vertical) / 1.5)
     var(--block-spacing-horizontal);
-  background: var(--article-code-background-color);
   border: solid var(--border-width) var(--card-border-color);
+  background: var(--article-code-background-color);
 
   &.shadow {
     box-shadow: var(--card-box-shadow);
